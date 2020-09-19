@@ -47,7 +47,8 @@ def draw(activation):
 
 def write(activation, f):
     name = activation.__class__.__name__
-    f.write("## {} activation function\n\n".format(name))
+    doc = "https://pytorch.org/docs/stable/generated/torch.nn.{}.html".format(name)
+    f.write("## [{} activation function]({})\n\n".format(name, doc))
     f.write("![{} activation function](fig/{}.png)\n\n".format(name, name))
 
 
