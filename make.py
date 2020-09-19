@@ -31,15 +31,15 @@ def get_activations():
 
 def draw(activation):
     name = activation.__class__.__name__
-    x = torch.linspace(-6, 6, 100)
+    x = torch.linspace(-6.5, 6.5, 100)
     y = activation(x)
 
     plt.figure()
     plt.plot(x, y)
     plt.xlabel("Input")
     plt.ylabel("Output")
-    plt.xlim(-6, 6)
-    plt.ylim(-6, 6)
+    plt.xlim(-6.5, 6.5)
+    plt.ylim(-6.5, 6.5)
     plt.title("{} activation function".format(name))
     plt.savefig("fig/{}.png".format(name))
     plt.close()
