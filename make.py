@@ -31,7 +31,7 @@ def get_activations():
 
 def draw(activation):
     name = activation.__class__.__name__
-    x = torch.linspace(-6.5, 6.5, 100)
+    x = torch.linspace(-6.5, 6.5, 1000)
     y = activation(x)
 
     plt.figure()
