@@ -2,7 +2,7 @@ import pathlib
 
 import torch
 import matplotlib.pyplot as plt
-import seaborn
+import mpl_hig
 
 
 def get_activations():
@@ -17,10 +17,12 @@ def get_activations():
     # yield torch.nn.PReLU()
     yield torch.nn.ReLU()
     yield torch.nn.ReLU6()
+    yield torch.nn.RReLU()
     yield torch.nn.SELU()
     yield torch.nn.CELU()
     yield torch.nn.GELU()
     yield torch.nn.Sigmoid()
+    yield torch.nn.SiLU()
     yield torch.nn.Softplus()
     yield torch.nn.Softshrink()
     yield torch.nn.Softsign()
@@ -53,7 +55,7 @@ def write(activation, f):
 
 
 def main():
-    seaborn.set_style("whitegrid")
+    mpl_hig.set("whitegrid")
     with open("README.md", "w") as f:
         f.write("# PyTorch Activations\n\n")
         for activation in get_activations():

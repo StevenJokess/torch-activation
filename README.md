@@ -36,6 +36,10 @@
 
 ![ReLU6 activation function](fig/ReLU6.png)
 
+## [RReLU activation function](https://pytorch.org/docs/stable/generated/torch.nn.RReLU.html)
+
+![RReLU activation function](fig/RReLU.png)
+
 ## [SELU activation function](https://pytorch.org/docs/stable/generated/torch.nn.SELU.html)
 
 ![SELU activation function](fig/SELU.png)
@@ -51,6 +55,10 @@
 ## [Sigmoid activation function](https://pytorch.org/docs/stable/generated/torch.nn.Sigmoid.html)
 
 ![Sigmoid activation function](fig/Sigmoid.png)
+
+## [SiLU activation function](https://pytorch.org/docs/stable/generated/torch.nn.SiLU.html)
+
+![SiLU activation function](fig/SiLU.png)
 
 ## [Softplus activation function](https://pytorch.org/docs/stable/generated/torch.nn.Softplus.html)
 
