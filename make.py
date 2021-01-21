@@ -1,8 +1,8 @@
 import pathlib
 
-import torch
 import matplotlib.pyplot as plt
 import mpl_hig
+import torch
 
 
 def get_activations():
@@ -32,12 +32,13 @@ def get_activations():
 
 
 def draw(activation):
+    torchcolor = "#EE4C2C"
     name = activation.__class__.__name__
     x = torch.linspace(-6.5, 6.5, 1000)
     y = activation(x)
 
     plt.figure()
-    plt.plot(x, y)
+    plt.plot(x, y, color=torchcolor)
     plt.xlabel("Input")
     plt.ylabel("Output")
     plt.xlim(-6.5, 6.5)
