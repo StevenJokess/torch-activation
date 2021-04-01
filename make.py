@@ -55,14 +55,10 @@ def write(activation, f):
     f.write("![{} activation function](fig/{}.png)\n\n".format(name, name))
 
 
-def main():
+if __name__ == "__main__":
     mpl_hig.set("whitegrid")
     with open("README.md", "w") as f:
         f.write("# PyTorch Activations\n\n")
         for activation in get_activations():
             draw(activation)
             write(activation, f)
-
-
-if __name__ == "__main__":
-    main()
